@@ -1,11 +1,12 @@
-dinfo = dir('~/Desktop/CS470/Final_Project/Emergency_Braking_EEG_Data');
+dinfo = dir('Emergency_Braking_EEG_Data');
 names_cell = {dinfo.name};
 names_cell = names_cell(:,3:end);
 
-N = 8;
+N = 18;
 data = cell(N,1);
 for k = 1:N
-    data{k} = load(names_cell{k});
+    f = fullfile('Emergency_Braking_EEG_Data', names_cell{k});
+    data{k} = load(f);
 end
 
 % initialize important variables in regards to dividing data into training and testing, as well as downsampling, and what your eeg signals are
