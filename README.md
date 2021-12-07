@@ -1,6 +1,6 @@
 An emergency braking intention detector for motorists.
 
-I trained a support vector machine on a dataset which recorded the brain signals of participants in a driving simulation. Participants wore EEG headsets and drove for 20 miutes in a driving simulation. The helmets recorded data streams consisting of 64 electroencephalogram signals. I used supervised learning and a sliding window to segment the streams into windows which were ascribed a label of 1 for 'about to brake' and 0 for 'not about to brake'. I achieved a 90% true positive rate and a 92% true negative rate after testing the model with the test set. 
+I trained a support vector machine on a dataset which recorded the brain signals of participants in a driving simulation. Participants wore EEG headsets and drove for 20 miutes in a driving simulation. The helmets recorded data streams consisting of 64 electroencephalogram signals. I used supervised learning and a sliding window to segment the streams into windows which were ascribed a label of 1 for 'about to brake' and 0 for 'not about to brake'. I also extracted features for the columns (individual signal) in each sliding glass window. Features included mean, standard deviation, activity, mobility, and complexity. I achieved a 90% true positive rate and a 92% true negative rate after evaluating the model with the test set. 
 
 Must be run using matlab
 
