@@ -5,3 +5,8 @@ I trained a support vector machine on a dataset which recorded the brain signals
 Must be run using matlab
 
 An EEG dataset consisting of 64 signals must be fed to the program by changing the directory on line 1 to the directory where your data is stored
+
+Link to dataset: https://mega.nz/file/g19BAbiS#8puF48I_66n2o5g1K86evw3QNNjK3SL3EkcoFjSChRs
+Link to dataset description: https://lampx.tugraz.at/~bci/database/002-2016/description.txt
+
+Unzip the files into a folder called 'Emergency_Braking_EEG_Data'. Make sure the matlab file is in the same directory as this folder before running.
